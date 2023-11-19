@@ -1,6 +1,6 @@
 //AICP_Internship_task-3
 //Done By Afia Mushtaq
-
+//Superior University Lahore
 #include<iostream>
 #include<cstring>
 using namespace std;
