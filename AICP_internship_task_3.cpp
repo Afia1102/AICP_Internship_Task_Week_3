@@ -7,10 +7,11 @@ using namespace std;
 
 class  electricity_units_calculator{
 	public:
+//function to display student_id
 void student_id_display(string student_id){
 	cout<<"My Student id is "<<student_id<<endl;
 }
-
+//function to display menu
 void menu_display(){
 	
 	cout<<"Enter your choice\n"
@@ -19,6 +20,7 @@ void menu_display(){
 	    <<"Press any other key to exit.\n";
 	
 }
+// Function to calculate cost of first slab
  void costSlab1(int electricity_units_slab1_1,int electricity_units_slab1_2,int electricity_units_slab1_3){
  	
  	 int unit_cost_slab1=10;
@@ -30,6 +32,7 @@ void menu_display(){
  	 int Total_bill_slab1_3=electricity_units_slab1_3*unit_cost_slab1;
  	 cout<<Total_bill_slab1_3<<"\t"<<endl;
  }
+//function to calculate cost of 2nd slab
  void costSlab2(int electricity_units_slab2_1,int electricity_units_slab2_2,int electricity_units_slab2_3){
  	
  	 int unit_cost_slab2=15;
@@ -41,7 +44,7 @@ void menu_display(){
  	 int Total_bill_slab2_3=electricity_units_slab2_3*unit_cost_slab2;
  	 cout<<Total_bill_slab2_3<<"\t"<<endl;
  }
- 
+ //function to calculate cost of 3rd slab
   void costSlab3(int electricity_units_slab3_1,int electricity_units_slab3_2,int electricity_units_slab3_3){
  	
  	 int unit_cost_slab3=20;
@@ -58,13 +61,16 @@ void menu_display(){
 };
 
 int  main(){
+	//creating object of class
 	electricity_units_calculator  calculator;
 	int choice;
+	//using 2D array for storing matrix data
 	int electricity_consumption_units[3][3]{
 	          {55,65,75},
 			  {120,150,170},
 			  {210,230,240}
 			};
+	//making repetitive menu
 			
 do{
 	cout<<endl;
